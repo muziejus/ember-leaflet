@@ -23,6 +23,8 @@ const leaf = typeof L === 'undefined' ? {} : L;
 export default class BaseLayer extends Component {
   L = leaf;
 
+  components = {};
+
   @service fastboot;
 
   leafletOptions = [

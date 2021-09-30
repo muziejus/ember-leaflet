@@ -25,6 +25,8 @@ import { action } from '@ember/object';
 export default class LeafletMap extends BaseLayer {
   @service emberLeaflet;
 
+  components = {};
+
   @action
   mergeComponents(obj) {
     if (!this.mergedComponents) {

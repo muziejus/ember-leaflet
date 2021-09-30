@@ -9,6 +9,8 @@ import BaseLayer from 'ember-leaflet/components/base-layer';
  * @extends BaseLayer
  */
 export default class GeojsonLayer extends BaseLayer {
+  components = {};
+
   leafletRequiredOptions = [
     ...this.leafletRequiredOptions,
 
