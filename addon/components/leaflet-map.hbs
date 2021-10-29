@@ -7,6 +7,7 @@
 {{/each}}
 
 <Root @didInsertParent={{this.didInsertParent}} @willDestroyParent={{this.willDestroyParent}} ...attributes as |Node|>
+<<<<<<< HEAD
   {{#each this.componentsToYield as |c|}}
     {{ember-leaflet-assign-to
       this.components
@@ -14,6 +15,16 @@
       value=(component c.name parent=this node=Node)
       onChange=this.mergeComponents}}
   {{/each}}
+=======
+  {{#let (ember-leaflet-hash) as |components|}}
+    {{#each this.componentsToYield as |c|}}
+      {{ember-leaflet-assign-to
+        components
+        key=(ember-leaflet-or c.as c.name)
+        value=(component c.name parent=this node=Node)
+        onChange=this.mergeComponents}}
+    {{/each}}
+>>>>>>> master
 
   {{yield this.mergedComponents}}
 </Root>
