@@ -29,6 +29,7 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/test-setup": "^0.49.0",
+    "@types/leaflet": "^1.7.10",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.2.4",
@@ -127,5 +128,12 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "types/*"
+      ]
+    }
   }
 }
